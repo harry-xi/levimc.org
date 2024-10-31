@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactElement } from "react";
 
-import VelocityIcon from "@/assets/brand/velocity.svg";
+import PaperIcon from "@/assets/brand/levilamina.svg";
 import BoltIcon from "@/assets/icons/heroicons/bolt.svg";
 import ChatBubbleLeftRightIcon from "@/assets/icons/heroicons/chat-bubble-left-right.svg";
 import CodeBracketIcon from "@/assets/icons/heroicons/code-bracket.svg";
@@ -15,31 +15,32 @@ import SEO from "@/components/util/SEO";
 import type { HangarProjectProps } from "@/lib/context/downloads";
 import { getProjectProps } from "@/lib/context/downloads";
 
-const VelocityHome = ({
+const LeviLaminaHome = ({
   project,
   hangarProjectListPagination,
 }: HangarProjectProps): ReactElement => {
   return (
     <>
       <SEO
-        title="Velocity"
-        description="Velocity is the modern, high-performance Minecraft server proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
-        keywords={[
-          "velocity",
-          "proxy",
-          "minecraft",
-          "performance",
-          "bungeecord",
-        ]}
-        canonical="/software/velocity"
+        title="LeviLamina"
+        description=""
+        keywords={[]}
+        canonical="/software/levilamina"
       />
       <SoftwareHeader
-        id="velocity"
-        name="Velocity"
+        id="levilamina"
+        name="LeviLamina"
         versionGroup={project.latestVersionGroup}
-        icon={VelocityIcon}
-        header={<>Next generation speed and capability</>}
-        description="Velocity is the modern, high-performance proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
+        icon={PaperIcon}
+        header={
+          <>
+            LeviLamina is
+            <br />
+            <span className="text-green-700">All You Need</span>
+          </>
+        }
+        description="LeviLamina is a lightweight, modular and versatile mod loader for Minecraft Bedrock Edition."
+        github="https://github.com/LiteLDev/LeviLamina"
       />
       <section
         id="why"
@@ -47,23 +48,23 @@ const VelocityHome = ({
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="font-semibold text-xl md:text-2xl px-6 lg:px-4">
-            Why Velocity?
+            Why LeviLamina?
           </h2>
           <div className="grid md:grid-cols-3 mt-6 gap-2 px-2 xl:gap-4">
             <FeatureCard
               icon={BoltIcon}
-              label="Out with the old, in with the new"
-              description="Velocity is the best proxy software available. Designed with performance and scalability in mind, Velocity is a lot faster and much more stable than BungeeCord."
+              label="It's stupidly fast"
+              description="LeviLamina is designed with performance in mind, featuring a lightweight core and modular architecture that minimizes overhead. The mod loader is optimized to efficiently handle mods while maintaining high performance."
             />
             <FeatureCard
               icon={ChatBubbleLeftRightIcon}
               label="An active and growing community"
-              description="Velocity has an active and growing community of server administrators and developers. If you encounter any problems, you can come talk with us on Discord and get real time support."
+              description="LeviLamina has a vibrant community of mod developers and server administrators. Get help and support through our active Discord community, where you can connect with other users and contributors."
             />
             <FeatureCard
               icon={CodeBracketIcon}
-              label="Plenty of plugins to choose from"
-              description="While BungeeCord has more third-party software due to its longer life so far, Velocity isn’t lacking in the essentials. With enough to get going and more added every day, Velocity has what you need."
+              label="An expanded API"
+              description="LeviLamina provides a powerful and flexible API that makes mod development easier. The modular design allows you to extend functionality while maintaining compatibility and stability."
             />
           </div>
         </div>
@@ -85,25 +86,25 @@ const VelocityHome = ({
           </div>
           <div className="flex-1">
             <h2 className="font-semibold text-2xl md:text-4xl">
-              A diverse plugin ecosystem
+              A thriving mod ecosystem
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Crafted by the PaperMC team & contributors, Hangar is our own
-              dedicated plugin repository, now in open beta! View over&nbsp;
-              <span className={"text-blue-500"}>
-                {hangarProjectListPagination.count}
+              Crafted by the LeviMC team & contributors, Bedrinth is our own
+              dedicated mod repository, now open to the public! View&nbsp;
+              <span className={"text-green-700"}>
+                {hangarProjectListPagination.totalPages}
               </span>
-              &nbsp;different plugins that are specific to Velocity, or list
-              your own with a very streamlined creation process.
+              &nbsp;different mods that are specific to LeviLamina, or list your
+              own with a very streamlined creation process.
             </p>
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://hangar.papermc.io/"
+                href="hhttps://bedrinth.com/?q=platform:levilamina%20type:mod"
                 external
                 dense
               >
-                Check out Hangar
+                View on Bedrinth
               </Button>
             </div>
           </div>
@@ -124,17 +125,17 @@ const VelocityHome = ({
               Getting Started
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              To get started with Velocity, you will need to download and
-              install the latest version of the proxy software. Once you&apos;re
-              ready, take a look at our extensive documentation.
+              To get started with Paper, you will need to download and install
+              the latest version of the server software. Once you&apos;re ready,
+              take a look at our extensive documentation.
             </p>
             <div className="flex flex-row gap-4 mt-8">
-              <Button variant="filled" href="/downloads/velocity" dense>
+              <Button variant="filled" href="/downloads/paper" dense>
                 Downloads
               </Button>
               <Button
                 variant="outlined"
-                href="https://docs.papermc.io/velocity/getting-started"
+                href="https://docs.papermc.io/paper/getting-started"
                 external
                 dense
               >
@@ -159,7 +160,7 @@ const VelocityHome = ({
               Together with a community of server owners
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Whether you need help with your proxy settings, server lag, or
+              Whether you need help with your server settings, server lag, or
               need a guide for formatting your chat, our knowledgeable staff and
               friendly community are always around to lend a hand.
             </p>
@@ -180,10 +181,10 @@ const VelocityHome = ({
   );
 };
 
-VelocityHome.softwareProps = {
-  github: "https://github.com/PaperMC/Velocity",
+LeviLaminaHome.softwareProps = {
+  github: "https://github.com/LiteLDev/LeviLamina",
 };
 
-export default VelocityHome;
+export default LeviLaminaHome;
 
-export const getStaticProps = getProjectProps("velocity");
+export const getStaticProps = getProjectProps("paper");

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import type { ReactElement } from "react";
 
-import PaperIcon from "@/assets/brand/paper.svg";
 import BoltIcon from "@/assets/icons/heroicons/bolt.svg";
 import ChatBubbleLeftRightIcon from "@/assets/icons/heroicons/chat-bubble-left-right.svg";
 import CodeBracketIcon from "@/assets/icons/heroicons/code-bracket.svg";
@@ -15,39 +14,30 @@ import SEO from "@/components/util/SEO";
 import type { HangarProjectProps } from "@/lib/context/downloads";
 import { getProjectProps } from "@/lib/context/downloads";
 
-const PaperHome = ({
+const VelocityHome = ({
   project,
   hangarProjectListPagination,
 }: HangarProjectProps): ReactElement => {
   return (
     <>
       <SEO
-        title="Paper"
-        description="Paper is a Minecraft game server based on Spigot, designed to greatly improve performance and offer more advanced features and API."
+        title="Velocity"
+        description="Velocity is the modern, high-performance Minecraft server proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
         keywords={[
-          "papermc",
-          "paper",
-          "server",
+          "velocity",
+          "proxy",
           "minecraft",
           "performance",
-          "spigot",
-          "fork",
+          "bungeecord",
         ]}
-        canonical="/software/paper"
+        canonical="/software/velocity"
       />
       <SoftwareHeader
-        id="paper"
-        name="Paper"
+        id="velocity"
+        name="Velocity"
         versionGroup={project.latestVersionGroup}
-        icon={PaperIcon}
-        header={
-          <>
-            The blazing fast
-            <br />
-            <span className="text-blue-500">Minecraft server</span>
-          </>
-        }
-        description="Paper is a Minecraft game server based on Spigot, designed to greatly improve performance and offer more advanced features and API."
+        header={<>Next generation speed and capability</>}
+        description="Velocity is the modern, high-performance proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
       />
       <section
         id="why"
@@ -55,23 +45,23 @@ const PaperHome = ({
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="font-semibold text-xl md:text-2xl px-6 lg:px-4">
-            Why Paper?
+            Why Velocity?
           </h2>
           <div className="grid md:grid-cols-3 mt-6 gap-2 px-2 xl:gap-4">
             <FeatureCard
               icon={BoltIcon}
-              label="It's stupidly fast"
-              description="Paper contains numerous improvements and optimizations resulting in a significant increase in performance. This includes asynchronous chunk loading, as well as major optimizations to the light engine, hoppers, entities, and more."
+              label="Out with the old, in with the new"
+              description="Velocity is the best proxy software available. Designed with performance and scalability in mind, Velocity is a lot faster and much more stable than BungeeCord."
             />
             <FeatureCard
               icon={ChatBubbleLeftRightIcon}
               label="An active and growing community"
-              description="Paper has an active and growing community of server administrators and developers. If you encounter any problems, you can come talk with us on Discord and get real time support."
+              description="Velocity has an active and growing community of server administrators and developers. If you encounter any problems, you can come talk with us on Discord and get real time support."
             />
             <FeatureCard
               icon={CodeBracketIcon}
-              label="An expanded API"
-              description="Paper extends and improves the Bukkit and Spigot APIs so that you and your developers have more features and functionality at your fingertips."
+              label="Plenty of plugins to choose from"
+              description="While BungeeCord has more third-party software due to its longer life so far, Velocity isn’t lacking in the essentials. With enough to get going and more added every day, Velocity has what you need."
             />
           </div>
         </div>
@@ -97,12 +87,12 @@ const PaperHome = ({
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
               Crafted by the PaperMC team & contributors, Hangar is our own
-              dedicated plugin repository, now in open beta! View&nbsp;
-              <span className={"text-blue-500"}>
-                {hangarProjectListPagination.count}
+              dedicated plugin repository, now in open beta! View over&nbsp;
+              <span className={"text-green-700"}>
+                {hangarProjectListPagination.totalPages}
               </span>
-              &nbsp;different plugins that are specific to Paper, or list your
-              own with a very streamlined creation process.
+              &nbsp;different plugins that are specific to Velocity, or list
+              your own with a very streamlined creation process.
             </p>
             <div className="flex flex-row gap-4 mt-8">
               <Button
@@ -132,17 +122,17 @@ const PaperHome = ({
               Getting Started
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              To get started with Paper, you will need to download and install
-              the latest version of the server software. Once you&apos;re ready,
-              take a look at our extensive documentation.
+              To get started with Velocity, you will need to download and
+              install the latest version of the proxy software. Once you&apos;re
+              ready, take a look at our extensive documentation.
             </p>
             <div className="flex flex-row gap-4 mt-8">
-              <Button variant="filled" href="/downloads/paper" dense>
+              <Button variant="filled" href="/downloads/velocity" dense>
                 Downloads
               </Button>
               <Button
                 variant="outlined"
-                href="https://docs.papermc.io/paper/getting-started"
+                href="https://docs.papermc.io/velocity/getting-started"
                 external
                 dense
               >
@@ -167,7 +157,7 @@ const PaperHome = ({
               Together with a community of server owners
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Whether you need help with your server settings, server lag, or
+              Whether you need help with your proxy settings, server lag, or
               need a guide for formatting your chat, our knowledgeable staff and
               friendly community are always around to lend a hand.
             </p>
@@ -188,10 +178,10 @@ const PaperHome = ({
   );
 };
 
-PaperHome.softwareProps = {
-  github: "https://github.com/PaperMC/Paper",
+VelocityHome.softwareProps = {
+  github: "https://github.com/PaperMC/Velocity",
 };
 
-export default PaperHome;
+export default VelocityHome;
 
-export const getStaticProps = getProjectProps("paper");
+export const getStaticProps = getProjectProps("velocity");

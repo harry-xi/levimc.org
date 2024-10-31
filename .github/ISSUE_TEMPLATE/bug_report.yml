@@ -28,7 +28,7 @@ body:
     attributes:
       label: Screenshots
       description: If applicable, add screenshots to help explain your problem.
-    
+
   - type: input
     attributes:
       label: Platform

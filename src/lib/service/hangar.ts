@@ -1,16 +1,15 @@
-export interface HangarProjectList {
-  pagination: HangarProjectListPagination;
+export interface BedrinthApiResponse {
+  data: BedrinthApiData;
 }
 
-export interface HangarProjectListPagination {
-  limit: number;
-  offset: number;
-  count: number;
+export interface BedrinthApiData {
+  pageIndex: number;
+  totalPages: number;
 }
 
-export const getHangarProjects = (
+export const getBedrinthPackages = (
   platform: string,
-): Promise<HangarProjectList> =>
+): Promise<BedrinthApiResponse> =>
   fetch(
-    `https://hangar.papermc.io/api/v1/projects?limit=1&offset=0&sort=-stars&platform=${platform.toUpperCase()}`,
+    `https://api.bedrinth.com/v2/packages?perPage=1&q=platform:${platform}&type:mod`,
   ).then((res) => res.json());

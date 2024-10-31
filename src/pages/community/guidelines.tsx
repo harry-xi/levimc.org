@@ -10,7 +10,13 @@ const CommunityGuidelines: NextPage = () => (
     <SEO
       title="Community Guidelines"
       description="Community Guidelines for the PaperMC community."
-      keywords={["papermc", "paper", "minecraft", "community", "guidelines"]}
+      keywords={[
+        "papermc",
+        "levilamina",
+        "minecraft",
+        "community",
+        "guidelines",
+      ]}
       canonical="/community/guidelines"
     />
     <header className="max-w-7xl mx-auto px-4 pt-32 pb-16">

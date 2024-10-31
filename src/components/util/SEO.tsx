@@ -16,12 +16,12 @@ const SEO = ({
 }: SEOProps): ReactElement => {
   return (
     <Head>
-      <title>{title + " | PaperMC"}</title>
+      <title>{title + " | LeviMC"}</title>
 
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords.join(", ")} />
 
-      <link rel="canonical" href={`https://papermc.io` + canonical} />
+      <link rel="canonical" href={`https://levimc.org` + canonical} />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />

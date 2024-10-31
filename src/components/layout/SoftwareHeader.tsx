@@ -12,6 +12,7 @@ export interface SoftwareHeaderProps {
   header: ReactElement;
   description: ReactElement | string;
   github?: string;
+  documentation?: string;
   eol?: boolean;
 }
 
@@ -23,6 +24,7 @@ const SoftwareHeader = ({
   header,
   description,
   github,
+  documentation,
   eol,
 }: SoftwareHeaderProps): ReactElement => (
   <header className="max-w-7xl flex flex-row flex-wrap mx-auto px-4 pt-32 pb-26 lg:(pt-48 pb-46) gap-16">
@@ -53,13 +55,11 @@ const SoftwareHeader = ({
         >
           {github ? "GitHub" : "Downloads"}
         </Button>
-        <Button
-          variant="outlined"
-          href={`https://docs.papermc.io/${id}`}
-          external
-        >
-          Documentation
-        </Button>
+        {documentation && (
+          <Button variant="outlined" href={documentation} external>
+            Documentation
+          </Button>
+        )}
         <Button
           variant="outlined"
           href={`https://jd.papermc.io/${id}/${versionGroup}`}

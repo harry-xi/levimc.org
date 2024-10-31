@@ -39,16 +39,12 @@ export function Terminal({ project }: ProjectProps) {
       switch (event.currentTarget.value) {
         case "help": {
           currentCmdOutput =
-            "Existing commands: help, downloads, plugins, docs, forums, team, contribute";
+            "Existing commands: help, mods, docs, forums, team, contribute";
           break;
         }
-        case "downloads": {
-          window.location.href = "/downloads";
-          currentCmdOutput = "Redirecting...";
-          break;
-        }
-        case "plugins": {
-          window.location.href = "https://hangar.papermc.io";
+        case "mods": {
+          window.location.href =
+            "https://bedrinth.com/?q=platform:levilamina%20type:mod";
           currentCmdOutput = "Redirecting...";
           break;
         }
@@ -102,14 +98,14 @@ export function Terminal({ project }: ProjectProps) {
 
     (async () => {
       let currentCmd = "";
-      for (const char of "java") {
+      for (const char of "start") {
         currentCmd += char;
         setCmd(currentCmd);
         await sleep(getNaturalDelay());
       }
 
       let currentArgs = "";
-      for (const char of " -jar paper.jar") {
+      for (const char of " .\\bedrock_server.exe") {
         currentArgs += char;
         setArgs(currentArgs);
         await sleep(getNaturalDelay());
@@ -168,7 +164,7 @@ export function Terminal({ project }: ProjectProps) {
         </div>
         <div>
           <span className="text-green-400">$ </span>
-          <span className="text-blue-400">{cmd}</span>
+          <span className="text-green-400">{cmd}</span>
           <span>{args}</span>
         </div>
       </div>
