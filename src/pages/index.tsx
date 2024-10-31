@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 
-import PaperIcon from "@/assets/brand/paper.svg";
+import PaperIcon from "@/assets/brand/levilamina.svg";
 import VelocityIcon from "@/assets/brand/velocity.svg";
 import HomeImage1 from "@/assets/images/home-1.webp";
 import HomeImage2 from "@/assets/images/home-2.webp";

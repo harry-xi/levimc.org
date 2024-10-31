@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 import FoliaIcon from "@/assets/brand/folia.svg";
-import PaperIcon from "@/assets/brand/paper.svg";
+import PaperIcon from "@/assets/brand/levilamina.svg";
 import VelocityIcon from "@/assets/brand/velocity.svg";
 import WaterfallIcon from "@/assets/brand/waterfall.svg";
 import SoftwarePreview from "@/components/data/SoftwarePreview";

@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 
-import PaperIcon from "@/assets/brand/paper.svg";
+import PaperIcon from "@/assets/brand/levilamina.svg";
 import SoftwareDownload from "@/components/layout/SoftwareDownload";
 import SEO from "@/components/util/SEO";
 import type { ProjectProps } from "@/lib/context/downloads";

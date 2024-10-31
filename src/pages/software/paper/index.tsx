@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactElement } from "react";
 
-import PaperIcon from "@/assets/brand/paper.svg";
+import PaperIcon from "@/assets/brand/levilamina.svg";
 import BoltIcon from "@/assets/icons/heroicons/bolt.svg";
 import ChatBubbleLeftRightIcon from "@/assets/icons/heroicons/chat-bubble-left-right.svg";
 import CodeBracketIcon from "@/assets/icons/heroicons/code-bracket.svg";
