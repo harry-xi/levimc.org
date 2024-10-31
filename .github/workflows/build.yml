@@ -17,7 +17,22 @@ jobs:
           pnpm ci
 
       - run: |
-          pnpm run build
+          pnpm build
+
+  build-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: |
+          pnpm ci
+
+      - run: |
+          pnpm pages:build
 
   lint:
     runs-on: ubuntu-latest
@@ -32,4 +47,4 @@ jobs:
           pnpm ci
 
       - run: |
-          pnpm run lint
+          pnpm lint

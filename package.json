@@ -1,18 +1,13 @@
 {
-  "name": "levimc.org",
-  "version": "0.0.1",
-  "author": {
-    "name": "LiteLDev",
-    "email": "LiteLDev@liteldev.com",
-    "url": "https://litebds.com"
-  },
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "pnpm dlx @cloudflare/next-on-pages",
+    "preview": "pnpm pages:build && wrangler pages dev",
+    "deploy": "pnpm pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@fontsource/poppins": "5.0.14",
@@ -26,6 +21,7 @@
     "swr": "2.2.5"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.5",
     "@svgr/webpack": "8.1.0",
     "@types/node": "20.14.11",
     "@types/react": "18.3.3",
