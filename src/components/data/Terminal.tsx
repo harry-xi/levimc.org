@@ -102,35 +102,35 @@ export function Terminal({ project }: ProjectProps) {
     ];
 
     (async () => {
-      // let currentCmd = "";
-      // for (const char of "start") {
-      //   currentCmd += char;
-      //   setCmd(currentCmd);
-      //   await sleep(getNaturalDelay());
-      // }
+      let currentCmd = "";
+      for (const char of "start") {
+        currentCmd += char;
+        setCmd(currentCmd);
+        await sleep(getNaturalDelay());
+      }
 
-      // let currentArgs = "";
-      // for (const char of " .\\bedrock_server.exe") {
-      //   currentArgs += char;
-      //   setArgs(currentArgs);
-      //   await sleep(getNaturalDelay());
-      // }
+      let currentArgs = "";
+      for (const char of " .\\bedrock_server.exe") {
+        currentArgs += char;
+        setArgs(currentArgs);
+        await sleep(getNaturalDelay());
+      }
 
-      // for (let i = 0; i < 3; i++) {
-      //   setLoading("Loading libraries, please wait" + ".".repeat(i + 1));
-      //   await sleep(500);
-      // }
+      for (let i = 0; i < 3; i++) {
+        setLoading("Loading libraries, please wait" + ".".repeat(i + 1));
+        await sleep(500);
+      }
 
-      // let currentOutput: ReactNode[] = [];
-      // for (let i = 0; i < outputLines.length; i++) {
-      //   currentOutput = [
-      //     ...currentOutput,
-      //     <InfoLog key={i}>{outputLines[i]}</InfoLog>,
-      //   ];
-      //   setOutput(currentOutput);
+      let currentOutput: ReactNode[] = [];
+      for (let i = 0; i < outputLines.length; i++) {
+        currentOutput = [
+          ...currentOutput,
+          <InfoLog key={i}>{outputLines[i]}</InfoLog>,
+        ];
+        setOutput(currentOutput);
 
-      //   await sleep(getNaturalDelay());
-      // }
+        await sleep(getNaturalDelay());
+      }
 
       setSuccess(
         <InfoLog>
