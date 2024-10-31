@@ -8,7 +8,7 @@ const CommunityIndex: NextPage = () => (
     <SEO
       title="Community"
       description="We're happy to have you as a part of the PaperMC community!"
-      keywords={["papermc", "paper", "minecraft", "sponsor", "community"]}
+      keywords={["papermc", "levilamina", "minecraft", "sponsor", "community"]}
       canonical="/community"
     />
     <header className="max-w-7xl flex flex-row mx-auto px-4 pt-32 pb-16 lg:(pt-48 pb-32) gap-16">

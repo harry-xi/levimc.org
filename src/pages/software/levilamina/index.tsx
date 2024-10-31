@@ -15,39 +15,32 @@ import SEO from "@/components/util/SEO";
 import type { HangarProjectProps } from "@/lib/context/downloads";
 import { getProjectProps } from "@/lib/context/downloads";
 
-const PaperHome = ({
+const LeviLaminaHome = ({
   project,
   hangarProjectListPagination,
 }: HangarProjectProps): ReactElement => {
   return (
     <>
       <SEO
-        title="Paper"
-        description="Paper is a Minecraft game server based on Spigot, designed to greatly improve performance and offer more advanced features and API."
-        keywords={[
-          "papermc",
-          "paper",
-          "server",
-          "minecraft",
-          "performance",
-          "spigot",
-          "fork",
-        ]}
-        canonical="/software/paper"
+        title="LeviLamina"
+        description=""
+        keywords={[]}
+        canonical="/software/levilamina"
       />
       <SoftwareHeader
-        id="paper"
-        name="Paper"
+        id="levilamina"
+        name="LeviLamina"
         versionGroup={project.latestVersionGroup}
         icon={PaperIcon}
         header={
           <>
-            The blazing fast
+            LeviLamina is
             <br />
-            <span className="text-green-700">Minecraft server</span>
+            <span className="text-green-700">All You Need</span>
           </>
         }
-        description="Paper is a Minecraft game server based on Spigot, designed to greatly improve performance and offer more advanced features and API."
+        description="LeviLamina is a lightweight, modular and versatile mod loader for Minecraft Bedrock Edition."
+        github="https://github.com/LiteLDev/LeviLamina"
       />
       <section
         id="why"
@@ -55,23 +48,23 @@ const PaperHome = ({
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="font-semibold text-xl md:text-2xl px-6 lg:px-4">
-            Why Paper?
+            Why LeviLamina?
           </h2>
           <div className="grid md:grid-cols-3 mt-6 gap-2 px-2 xl:gap-4">
             <FeatureCard
               icon={BoltIcon}
               label="It's stupidly fast"
-              description="Paper contains numerous improvements and optimizations resulting in a significant increase in performance. This includes asynchronous chunk loading, as well as major optimizations to the light engine, hoppers, entities, and more."
+              description="LeviLamina is designed with performance in mind, featuring a lightweight core and modular architecture that minimizes overhead. The mod loader is optimized to efficiently handle mods while maintaining high performance."
             />
             <FeatureCard
               icon={ChatBubbleLeftRightIcon}
               label="An active and growing community"
-              description="Paper has an active and growing community of server administrators and developers. If you encounter any problems, you can come talk with us on Discord and get real time support."
+              description="LeviLamina has a vibrant community of mod developers and server administrators. Get help and support through our active Discord community, where you can connect with other users and contributors."
             />
             <FeatureCard
               icon={CodeBracketIcon}
               label="An expanded API"
-              description="Paper extends and improves the Bukkit and Spigot APIs so that you and your developers have more features and functionality at your fingertips."
+              description="LeviLamina provides a powerful and flexible API that makes mod development easier. The modular design allows you to extend functionality while maintaining compatibility and stability."
             />
           </div>
         </div>
@@ -93,25 +86,25 @@ const PaperHome = ({
           </div>
           <div className="flex-1">
             <h2 className="font-semibold text-2xl md:text-4xl">
-              A diverse plugin ecosystem
+              A thriving mod ecosystem
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Crafted by the PaperMC team & contributors, Hangar is our own
-              dedicated plugin repository, now in open beta! View&nbsp;
+              Crafted by the LeviMC team & contributors, Bedrinth is our own
+              dedicated mod repository, now open to the public! View&nbsp;
               <span className={"text-green-700"}>
-                {hangarProjectListPagination.count}
+                {hangarProjectListPagination.totalPages}
               </span>
-              &nbsp;different plugins that are specific to Paper, or list your
+              &nbsp;different mods that are specific to LeviLamina, or list your
               own with a very streamlined creation process.
             </p>
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://hangar.papermc.io/"
+                href="hhttps://bedrinth.com/?q=platform:levilamina%20type:mod"
                 external
                 dense
               >
-                Check out Hangar
+                View on Bedrinth
               </Button>
             </div>
           </div>
@@ -188,10 +181,10 @@ const PaperHome = ({
   );
 };
 
-PaperHome.softwareProps = {
-  github: "https://github.com/PaperMC/Paper",
+LeviLaminaHome.softwareProps = {
+  github: "https://github.com/LiteLDev/LeviLamina",
 };
 
-export default PaperHome;
+export default LeviLaminaHome;
 
-export const getStaticProps = getProjectProps("paper");
+export const getStaticProps = getProjectProps("levilamina");

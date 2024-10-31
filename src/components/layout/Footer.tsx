@@ -12,9 +12,6 @@ const Footer = () => (
           <span className="font-semibold">Getting Started</span>
           <ul className="mt-4 leading-5 text-gray-400 space-y-2">
             <li>
-              <Link href="/downloads">Downloads</Link>
-            </li>
-            <li>
               {/* eslint-disable-next-line react/jsx-no-target-blank */}
               <a href="https://lamina.levimc.org" target="_blank">
                 Documentation

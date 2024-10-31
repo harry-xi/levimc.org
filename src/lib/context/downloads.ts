@@ -2,10 +2,10 @@ import type { GetStaticProps } from "next";
 import { createContext } from "react";
 
 import type {
-  HangarProjectListPagination,
-  HangarProjectList,
+  BedrinthApiData,
+  BedrinthApiResponse,
 } from "@/lib/service/hangar";
-import { getHangarProjects } from "@/lib/service/hangar";
+import { getBedrinthPackages } from "@/lib/service/hangar";
 import type { Build } from "@/lib/service/types";
 import { getProject, getVersionBuilds } from "@/lib/service/v2";
 
@@ -29,11 +29,11 @@ export interface ProjectProps {
 }
 
 export interface HangarProjectProps extends ProjectProps {
-  hangarProjectListPagination: HangarProjectListPagination;
+  hangarProjectListPagination: BedrinthApiData;
 }
 
 export const DownloadsContext = createContext<DownloadsContextProps>({
-  projectId: "paper",
+  projectId: "levilamina",
   project: undefined,
   builds: undefined,
   version: "",
@@ -58,8 +58,8 @@ export const getProjectProps = (
 ): GetStaticProps => {
   return async () => {
     const { project_name, versions, version_groups } = await getProject(id);
-    const hangarProjectList: HangarProjectList | null = hangarProject
-      ? await getHangarProjects(id)
+    const hangarProjectList: BedrinthApiResponse | null = hangarProject
+      ? await getBedrinthPackages(id)
       : null;
 
     let latestStableVersion = versions[versions.length - 1];
@@ -86,7 +86,7 @@ export const getProjectProps = (
       props: {
         project,
         hangarProjectListPagination: hangarProjectList
-          ? hangarProjectList.pagination
+          ? hangarProjectList.data.pageIndex
           : null,
       },
       revalidate: 600, // 10 minutes

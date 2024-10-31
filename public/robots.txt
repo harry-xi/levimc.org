@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /downloads/all
 Disallow: /repository/
 Disallow: /repo/
 Disallow: /api/

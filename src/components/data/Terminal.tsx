@@ -39,12 +39,7 @@ export function Terminal({ project }: ProjectProps) {
       switch (event.currentTarget.value) {
         case "help": {
           currentCmdOutput =
-            "Existing commands: help, downloads, mods, docs, forums, team, contribute";
-          break;
-        }
-        case "downloads": {
-          window.location.href = "/downloads";
-          currentCmdOutput = "Redirecting...";
+            "Existing commands: help, mods, docs, forums, team, contribute";
           break;
         }
         case "mods": {
