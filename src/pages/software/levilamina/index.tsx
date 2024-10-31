@@ -187,4 +187,4 @@ LeviLaminaHome.softwareProps = {
 
 export default LeviLaminaHome;
 
-export const getStaticProps = getProjectProps("levilamina");
+export const getStaticProps = getProjectProps("paper");

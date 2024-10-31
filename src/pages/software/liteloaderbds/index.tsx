@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
-import WaterfallIcon from "@/assets/brand/waterfall.svg";
 import CommunityImage from "@/assets/images/community.webp";
 import VelocityImage from "@/assets/images/velocity.webp";
 import Button from "@/components/input/Button";
@@ -31,7 +30,6 @@ const WaterfallHome = ({ project }: HangarProjectProps): ReactElement => {
         id="waterfall"
         name="Waterfall"
         versionGroup={project.latestVersionGroup}
-        icon={WaterfallIcon}
         header={<>Waterfall has reached end of life</>}
         description={
           <>

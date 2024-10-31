@@ -170,4 +170,4 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
 
 export default Home;
 
-export const getStaticProps = getProjectProps("levilamina");
+export const getStaticProps = getProjectProps("paper");

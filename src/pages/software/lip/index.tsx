@@ -1,7 +1,6 @@
 import Image from "next/image";
 import type { ReactElement } from "react";
 
-import VelocityIcon from "@/assets/brand/velocity.svg";
 import BoltIcon from "@/assets/icons/heroicons/bolt.svg";
 import ChatBubbleLeftRightIcon from "@/assets/icons/heroicons/chat-bubble-left-right.svg";
 import CodeBracketIcon from "@/assets/icons/heroicons/code-bracket.svg";
@@ -37,7 +36,6 @@ const VelocityHome = ({
         id="velocity"
         name="Velocity"
         versionGroup={project.latestVersionGroup}
-        icon={VelocityIcon}
         header={<>Next generation speed and capability</>}
         description="Velocity is the modern, high-performance proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
       />
@@ -91,7 +89,7 @@ const VelocityHome = ({
               Crafted by the PaperMC team & contributors, Hangar is our own
               dedicated plugin repository, now in open beta! View over&nbsp;
               <span className={"text-green-700"}>
-                {hangarProjectListPagination.count}
+                {hangarProjectListPagination.totalPages}
               </span>
               &nbsp;different plugins that are specific to Velocity, or list
               your own with a very streamlined creation process.
