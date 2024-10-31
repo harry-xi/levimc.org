@@ -16,7 +16,7 @@ jobs:
       - uses: pnpm/action-setup@v4
 
       - run: |
-          pnpm ci
+          pnpm install
 
       - run: |
           pnpm build
@@ -33,7 +33,7 @@ jobs:
       - uses: pnpm/action-setup@v4
 
       - run: |
-          pnpm ci
+          pnpm install
 
       - run: |
           pnpm pages:build
@@ -50,7 +50,7 @@ jobs:
       - uses: pnpm/action-setup@v4
 
       - run: |
-          pnpm ci
+          pnpm install
 
       - run: |
           pnpm lint
