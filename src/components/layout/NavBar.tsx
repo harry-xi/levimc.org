@@ -85,6 +85,24 @@ const NavBar = ({ component }: NavBarProps) => {
               LiteLoaderBDS
             </NavDropDownLink>
           </NavDropDown>
+          <NavDropDown label="Documentation">
+            <NavDropDownLink href="https://lamina.levimc.org" target="_blank">
+              LeviLamina
+              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
+            </NavDropDownLink>
+            <NavDropDownLink href="https://lip.futrime.com" target="_blank">
+              lip
+              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
+            </NavDropDownLink>
+            <NavDropDownLink
+              href="https://github.com/LiteLDev/liteloaderbds-documentation"
+              target="_blank"
+              eol
+            >
+              LiteLoaderBDS
+              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
+            </NavDropDownLink>
+          </NavDropDown>
           <NavLink
             href="https://bedrinth.com/?q=platform:levilamina%20type:mod"
             target="_blank"
@@ -93,16 +111,9 @@ const NavBar = ({ component }: NavBarProps) => {
             Mods
             <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
           </NavLink>
-          <NavLink
-            href="https://lamina.levimc.org"
-            target="_blank"
-            className="inline-flex items-center"
-          >
-            Docs
-            <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
-          </NavLink>
           <NavLink href="/team">Team</NavLink>
           <NavLink href="/contribute">Contribute</NavLink>
+          <NavLink href="/sponsors">Sponsors</NavLink>
         </div>
 
         <div className="flex-grow" />

@@ -94,7 +94,7 @@ const WaterfallHome = (): ReactElement => {
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://discord.gg/papermc"
+                href="https://discord.gg/8dvbzQMDNQ"
                 external
                 dense
               >

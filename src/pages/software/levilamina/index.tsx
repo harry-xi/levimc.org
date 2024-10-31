@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactElement } from "react";
 
-import PaperIcon from "@/assets/brand/levilamina.svg";
+import LeviLaminaIcon from "@/assets/brand/levilamina.svg";
 import BoltIcon from "@/assets/icons/heroicons/bolt.svg";
 import ChatBubbleLeftRightIcon from "@/assets/icons/heroicons/chat-bubble-left-right.svg";
 import CodeBracketIcon from "@/assets/icons/heroicons/code-bracket.svg";
@@ -25,7 +25,7 @@ const LeviLaminaHome = (): ReactElement => {
       <SoftwareHeader
         id="levilamina"
         name="LeviLamina"
-        icon={PaperIcon}
+        icon={LeviLaminaIcon}
         header={
           <>
             LeviLamina is
@@ -84,10 +84,9 @@ const LeviLaminaHome = (): ReactElement => {
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
               Crafted by the LeviMC team & contributors, Bedrinth is our own
-              dedicated mod repository, now open to the public! View&nbsp;
-              <span className={"text-green-700"}>{0}</span>
-              &nbsp;different mods that are specific to LeviLamina, or list your
-              own with a very streamlined creation process.
+              dedicated mod repository, now open to the public! View different
+              mods that are specific to LeviLamina, or list your own with a very
+              streamlined creation process.
             </p>
             <div className="flex flex-row gap-4 mt-8">
               <Button
@@ -117,17 +116,31 @@ const LeviLaminaHome = (): ReactElement => {
               Getting Started
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              To get started with Paper, you will need to download and install
-              the latest version of the server software. Once you&apos;re ready,
-              take a look at our extensive documentation.
+              To get started with LeviLamina, you will need to download and
+              install the latest version of the software. We highly recommend
+              using{" "}
+              <a
+                href="https://github.com/futrime/lip"
+                target="_blank"
+                rel="noreferrer"
+                className="text-green-700"
+              >
+                lip
+              </a>{" "}
+              to install everything you need.
             </p>
             <div className="flex flex-row gap-4 mt-8">
-              <Button variant="filled" href="/downloads/paper" dense>
-                Downloads
+              <Button
+                variant="filled"
+                href="https://lamina.levimc.org/quickstart/"
+                external
+                dense
+              >
+                Quickstart
               </Button>
               <Button
                 variant="outlined"
-                href="https://docs.papermc.io/paper/getting-started"
+                href="https://lamina.levimc.org/"
                 external
                 dense
               >
@@ -159,7 +172,7 @@ const LeviLaminaHome = (): ReactElement => {
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://discord.gg/papermc"
+                href="https://discord.gg/8dvbzQMDNQ"
                 external
                 dense
               >
