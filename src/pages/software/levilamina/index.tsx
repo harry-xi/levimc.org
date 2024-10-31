@@ -12,13 +12,8 @@ import FeatureCard from "@/components/data/FeatureCard";
 import Button from "@/components/input/Button";
 import SoftwareHeader from "@/components/layout/SoftwareHeader";
 import SEO from "@/components/util/SEO";
-import type { HangarProjectProps } from "@/lib/context/downloads";
-import { getProjectProps } from "@/lib/context/downloads";
 
-const LeviLaminaHome = ({
-  project,
-  hangarProjectListPagination,
-}: HangarProjectProps): ReactElement => {
+const LeviLaminaHome = (): ReactElement => {
   return (
     <>
       <SEO
@@ -30,7 +25,6 @@ const LeviLaminaHome = ({
       <SoftwareHeader
         id="levilamina"
         name="LeviLamina"
-        versionGroup={project.latestVersionGroup}
         icon={PaperIcon}
         header={
           <>
@@ -91,9 +85,7 @@ const LeviLaminaHome = ({
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
               Crafted by the LeviMC team & contributors, Bedrinth is our own
               dedicated mod repository, now open to the public! View&nbsp;
-              <span className={"text-green-700"}>
-                {hangarProjectListPagination.totalPages}
-              </span>
+              <span className={"text-green-700"}>{0}</span>
               &nbsp;different mods that are specific to LeviLamina, or list your
               own with a very streamlined creation process.
             </p>
@@ -186,5 +178,3 @@ LeviLaminaHome.softwareProps = {
 };
 
 export default LeviLaminaHome;
-
-export const getStaticProps = getProjectProps("paper");

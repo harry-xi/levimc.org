@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Image from "next/image";
 
 import LeviLaminaIcon from "@/assets/brand/levilamina.svg";
@@ -11,10 +10,9 @@ import SoftwarePreview from "@/components/data/SoftwarePreview";
 import { Terminal } from "@/components/data/Terminal";
 import Button from "@/components/input/Button";
 import SEO from "@/components/util/SEO";
-import { getProjectProps, type ProjectProps } from "@/lib/context/downloads";
 import { useBstatsPlayers } from "@/lib/service/bstats";
 
-const Home: NextPage<ProjectProps> = ({ project }) => {
+const Home = ({}) => {
   const { data: playerData } = useBstatsPlayers();
 
   return (
@@ -46,7 +44,7 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
           </div>
         </div>
         <div className="flex-1 lg:flex hidden justify-end">
-          <Terminal project={project} />
+          <Terminal />
         </div>
       </header>
       <section
@@ -169,5 +167,3 @@ const Home: NextPage<ProjectProps> = ({ project }) => {
 };
 
 export default Home;
-
-export const getStaticProps = getProjectProps("paper");

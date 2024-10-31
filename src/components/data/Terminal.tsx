@@ -1,7 +1,6 @@
 import type { KeyboardEvent } from "react";
 import { type ReactNode, useEffect, useRef, useState } from "react";
 
-import type { ProjectProps } from "@/lib/context/downloads";
 import { formatISOFullTime } from "@/lib/util/time";
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -18,7 +17,7 @@ function InfoLog({ children }: { children: ReactNode }) {
   );
 }
 
-export function Terminal({ project }: ProjectProps) {
+export function Terminal() {
   const [cmd, setCmd] = useState("");
   const [args, setArgs] = useState("");
   const [loading, setLoading] = useState("");
@@ -85,7 +84,7 @@ export function Terminal({ project }: ProjectProps) {
 
   useEffect(() => {
     const outputLines = [
-      `Starting minecraft server version ${project.latestStableVersion}`,
+      `Starting minecraft server version ${"x.x.x"}`,
       'Preparing level "world"',
       "Preparing start region for dimension minecraft:overworld",
       "Time elapsed: 363 ms",
@@ -145,7 +144,7 @@ export function Terminal({ project }: ProjectProps) {
         </div>,
       );
     })();
-  }, [project.latestStableVersion]);
+  }, []);
 
   return (
     <div className="max-h-82 w-120 h-283 rounded-lg bg-gray-800">
