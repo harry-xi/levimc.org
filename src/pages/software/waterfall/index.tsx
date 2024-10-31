@@ -37,14 +37,14 @@ const WaterfallHome = ({ project }: HangarProjectProps): ReactElement => {
           <>
             We recommend you transition to{" "}
             <Link
-              className="text-blue-500 hover:text-blue-400 hover:underline"
+              className="text-green-700 hover:text-green-400 hover:underline"
               href="/software/velocity"
             >
               Velocity
             </Link>
             . For more information see the{" "}
             <a
-              className="text-blue-500 hover:text-blue-400 hover:underline"
+              className="text-green-700 hover:text-green-400 hover:underline"
               href="https://forums.papermc.io/threads/1088/"
             >
               announcement

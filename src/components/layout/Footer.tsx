@@ -7,7 +7,7 @@ import classes from "@/styles/components/layout/Footer.module.css";
 const Footer = () => (
   <footer className={clsx("bg-background-dark-80 py-12 mt-8", classes.footer)}>
     <div className="max-w-7xl m-auto px-4">
-      <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-sm text-white">
+      <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 text-sm text-white">
         <div>
           <span className="font-semibold">Getting Started</span>
           <ul className="mt-4 leading-5 text-gray-400 space-y-2">
@@ -16,12 +16,15 @@ const Footer = () => (
             </li>
             <li>
               {/* eslint-disable-next-line react/jsx-no-target-blank */}
-              <a href="https://docs.papermc.io" target="_blank">
+              <a href="https://lamina.levimc.org" target="_blank">
                 Documentation
               </a>
             </li>
             <li>
-              <Link href="/javadocs">Javadocs</Link>
+              {/* eslint-disable-next-line react/jsx-no-target-blank */}
+              <a href="https://lamina.levimc.org/api" target="_blank">
+                API Reference
+              </a>
             </li>
           </ul>
         </div>
@@ -33,7 +36,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="https://github.com/PaperMC"
+                href="https://github.com/LiteLDev"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -42,32 +45,17 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="https://discord.gg/papermc"
+                href="https://discord.gg/8dvbzQMDNQ"
                 target="_blank"
                 rel="noreferrer"
               >
                 Discord
               </a>
             </li>
-            <li>
-              {/* eslint-disable-next-line react/jsx-no-target-blank */}
-              <a href="https://forums.papermc.io/" target="_blank">
-                Forums
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/PaperPowered"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
           </ul>
         </div>
         <div>
-          <span className="font-semibold">PaperMC</span>
+          <span className="font-semibold">About</span>
           <ul className="mt-4 leading-5 text-gray-400 space-y-2">
             <li>
               <Link href="/team">Our Team</Link>
@@ -80,38 +68,9 @@ const Footer = () => (
             </li>
             <li>
               {/* eslint-disable-next-line react/jsx-no-target-blank */}
-              <a href="https://hangar.papermc.io" target="_blank">
-                Hangar
+              <a href="https://bedrinth.com" target="_blank">
+                Bedrinth
               </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <span className="font-semibold">Terms</span>
-          <ul className="mt-4 leading-5 text-gray-400 space-y-2">
-            <li>
-              <Link href="https://forums.papermc.io/help/terms/">Terms</Link>
-            </li>
-            <li>
-              <Link href="https://forums.papermc.io/help/privacy-policy/">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="https://forums.papermc.io/help/legal-notice/">
-                Legal Notice
-              </Link>
-            </li>
-            <li>
-              <Link href="https://hangar.papermc.io/terms">Hangar Terms</Link>
-            </li>
-            <li>
-              <Link href="https://hangar.papermc.io/privacy">
-                Hangar Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/community/guidelines">Community Guidelines</Link>
             </li>
           </ul>
         </div>
@@ -120,7 +79,7 @@ const Footer = () => (
         <LogoMarkerDark className="h-12 cursor-pointer" alt="PaperMC" />
         <div className="flex-1" />
         <span className="text-gray-300 text-sm">
-          © {new Date().getFullYear()} The PaperMC Team
+          © {new Date().getFullYear()} The LeviMC Team
         </span>
       </div>
     </div>

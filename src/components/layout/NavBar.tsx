@@ -64,11 +64,11 @@ const NavBar = ({ component }: NavBarProps) => {
         <Link href="/" className="leading-0" tabIndex={-1} aria-hidden={true}>
           <LogoMarkerLight
             className="block dark:hidden h-12 cursor-pointer"
-            alt="PaperMC"
+            alt="LeviMC"
           />
           <LogoMarkerDark
             className="hidden dark:block h-12 cursor-pointer"
-            alt="PaperMC"
+            alt="LeviMC"
           />
         </Link>
         <div
@@ -78,37 +78,28 @@ const NavBar = ({ component }: NavBarProps) => {
           )}
         >
           <NavDropDown label="Software">
-            <NavDropDownLink href="/software/paper">Paper</NavDropDownLink>
-            <NavDropDownLink href="/software/folia">Folia</NavDropDownLink>
-            <NavDropDownLink href="/software/velocity">
-              Velocity
+            <NavDropDownLink href="/software/levilamina">
+              LeviLamina
             </NavDropDownLink>
-            <NavDropDownLink href="/software/waterfall" eol>
-              Waterfall
+            <NavDropDownLink href="/software/lip">lip</NavDropDownLink>
+            <NavDropDownLink href="/software/liteloaderbds" eol>
+              LiteLoaderBDS
             </NavDropDownLink>
           </NavDropDown>
           <NavLink
-            href="https://hangar.papermc.io/"
+            href="https://bedrinth.com/?q=platform:levilamina%20type:mod"
             target="_blank"
             className="inline-flex items-center"
           >
-            Plugins
+            Mods
             <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
           </NavLink>
           <NavLink
-            href="https://docs.papermc.io/"
+            href="https://lamina.levimc.org"
             target="_blank"
             className="inline-flex items-center"
           >
             Docs
-            <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
-          </NavLink>
-          <NavLink
-            href="https://forums.papermc.io/"
-            target="_blank"
-            className="inline-flex items-center"
-          >
-            Forums
             <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
           </NavLink>
           <NavLink href="/team">Team</NavLink>
@@ -119,19 +110,13 @@ const NavBar = ({ component }: NavBarProps) => {
         <IconButton
           icon={DiscordIcon}
           label="Discord"
-          href="https://discord.gg/papermc"
+          href="https://discord.gg/8dvbzQMDNQ"
           external
         />
         <IconButton
           icon={GitHubIcon}
           label="GitHub"
-          href={softwareProps?.github || "https://github.com/PaperMC"}
-          external
-        />
-        <IconButton
-          icon={TwitterIcon}
-          label="Twitter"
-          href="https://twitter.com/PaperPowered"
+          href={softwareProps?.github || "https://github.com/LiteLDev"}
           external
         />
       </div>

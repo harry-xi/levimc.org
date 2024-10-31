@@ -44,7 +44,7 @@ const PaperHome = ({
           <>
             The blazing fast
             <br />
-            <span className="text-blue-500">Minecraft server</span>
+            <span className="text-green-700">Minecraft server</span>
           </>
         }
         description="Paper is a Minecraft game server based on Spigot, designed to greatly improve performance and offer more advanced features and API."
@@ -98,7 +98,7 @@ const PaperHome = ({
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
               Crafted by the PaperMC team & contributors, Hangar is our own
               dedicated plugin repository, now in open beta! View&nbsp;
-              <span className={"text-blue-500"}>
+              <span className={"text-green-700"}>
                 {hangarProjectListPagination.count}
               </span>
               &nbsp;different plugins that are specific to Paper, or list your

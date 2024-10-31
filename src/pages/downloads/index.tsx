@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 
-import FoliaIcon from "@/assets/brand/folia.svg";
-import PaperIcon from "@/assets/brand/levilamina.svg";
-import VelocityIcon from "@/assets/brand/velocity.svg";
-import WaterfallIcon from "@/assets/brand/waterfall.svg";
+import LeviLaminaIcon from "@/assets/brand/levilamina.svg";
+import LipIcon from "@/assets/brand/lip.svg";
+import LiteLoaderBDSIcon from "@/assets/brand/liteloaderbds.svg";
 import SoftwarePreview from "@/components/data/SoftwarePreview";
 import SEO from "@/components/util/SEO";
 
@@ -12,16 +11,8 @@ const Downloads: NextPage = () => {
     <>
       <SEO
         title="Downloads"
-        description="Find downloads for our software – including Paper, Velocity, and Waterfall."
-        keywords={[
-          "papermc",
-          "minecraft",
-          "performance",
-          "paper",
-          "velocity",
-          "waterfall",
-          "downloads",
-        ]}
+        description=""
+        keywords={[]}
         canonical="/downloads"
       />
       <header className="max-w-4xl flex flex-col items-center mx-auto px-4 pt-32 pb-16 lg:(pt-48 pb-26) gap-2">
@@ -32,41 +23,32 @@ const Downloads: NextPage = () => {
           {"Select the software you want to download."}
         </p>
         <h2 className="text-2xl text-center font-medium mt-4">
-          Server Software
+          Modding Framework
         </h2>
         <div className="grid md:grid-cols-2 gap-2 px-2 xl:gap-4">
           <SoftwarePreview
-            id="paper"
-            name="Paper"
-            icon={PaperIcon}
-            description="Paper is a Minecraft game server, designed to greatly improve performance and offer more advanced features and API."
-            download
+            id="levilamina"
+            name="LeviLamina"
+            icon={LeviLaminaIcon}
+            description="LeviLamina is a lightweight, modular and versatile mod loader for Minecraft Bedrock Edition."
           />
           <SoftwarePreview
-            id="folia"
-            name="Folia"
-            icon={FoliaIcon}
-            description="Folia is a new fork of Paper that adds regionized multithreading to the server. Access to Folia builds isn't currently available."
+            id="liteloaderbds"
+            name="LiteLoaderBDS"
+            icon={LiteLoaderBDSIcon}
+            description="LiteLoaderBDS is a legacy cross-language plugin loader for Minecraft Bedrock Dedicated Server."
+            eol
           />
         </div>
         <h2 className="text-2xl text-center font-medium mt-4">
-          Proxy Software
+          Utility Software
         </h2>
         <div className="grid md:grid-cols-2 gap-2 px-2 xl:gap-4">
           <SoftwarePreview
-            id="velocity"
-            name="Velocity"
-            icon={VelocityIcon}
-            description="Velocity is the modern, high-performance Minecraft server proxy."
-            download
-          />
-          <SoftwarePreview
-            id="waterfall"
-            name="Waterfall"
-            icon={WaterfallIcon}
-            description="Waterfall is a legacy drop-in BungeeCord replacement with some additional improvements to performance and stability."
-            download
-            eol
+            id="lip"
+            name="lip"
+            icon={LipIcon}
+            description="lip is our officially recommended package installer for Bedrock mods."
           />
         </div>
       </header>
