@@ -15,21 +15,15 @@ const Team: NextPage = () => {
 
   return (
     <>
-      <SEO
-        title="Team"
-        description="Meet the team behind PaperMC, a Minecraft software organization focusing on improving
-          the game’s ecosystem with faster and more secure software."
-        keywords={["papermc", "levilamina", "minecraft", "team"]}
-        canonical="/team"
-      />
+      <SEO title="Team" description="" keywords={[]} canonical="/team" />
       <header className="max-w-7xl flex flex-row mx-auto px-4 pt-32 pb-26 lg:(pt-48 pb-46) gap-16">
         <div className="flex-1">
           <h1 className="font-medium leading-normal lg:(text-5xl leading-normal) text-4xl">
             Meet our team
           </h1>
           <p className="text-xl mt-4">
-            Meet the members behind PaperMC, a Minecraft software organization
-            focusing on improving the game’s ecosystem with faster and more
+            Meet the members behind LeviMC, a Minecraft software organization
+            focusing on improving the game&apos;s ecosystem with faster and more
             secure software.
           </p>
           <div className="flex flex-row gap-4 mt-8">
@@ -38,7 +32,7 @@ const Team: NextPage = () => {
             </Button>
             <Button
               variant="outlined"
-              href="https://github.com/PaperMC"
+              href="https://github.com/LiteLDev"
               external
             >
               GitHub

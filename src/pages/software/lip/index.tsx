@@ -11,13 +11,8 @@ import FeatureCard from "@/components/data/FeatureCard";
 import Button from "@/components/input/Button";
 import SoftwareHeader from "@/components/layout/SoftwareHeader";
 import SEO from "@/components/util/SEO";
-import type { HangarProjectProps } from "@/lib/context/downloads";
-import { getProjectProps } from "@/lib/context/downloads";
 
-const VelocityHome = ({
-  project,
-  hangarProjectListPagination,
-}: HangarProjectProps): ReactElement => {
+const VelocityHome = (): ReactElement => {
   return (
     <>
       <SEO
@@ -35,7 +30,6 @@ const VelocityHome = ({
       <SoftwareHeader
         id="velocity"
         name="Velocity"
-        versionGroup={project.latestVersionGroup}
         header={<>Next generation speed and capability</>}
         description="Velocity is the modern, high-performance proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
       />
@@ -88,9 +82,7 @@ const VelocityHome = ({
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
               Crafted by the PaperMC team & contributors, Hangar is our own
               dedicated plugin repository, now in open beta! View over&nbsp;
-              <span className={"text-green-700"}>
-                {hangarProjectListPagination.totalPages}
-              </span>
+              <span className={"text-green-700"}>{0}</span>
               &nbsp;different plugins that are specific to Velocity, or list
               your own with a very streamlined creation process.
             </p>
@@ -164,7 +156,7 @@ const VelocityHome = ({
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://discord.gg/papermc"
+                href="https://discord.gg/8dvbzQMDNQ"
                 external
                 dense
               >
@@ -183,5 +175,3 @@ VelocityHome.softwareProps = {
 };
 
 export default VelocityHome;
-
-export const getStaticProps = getProjectProps("velocity");

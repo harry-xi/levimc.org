@@ -11,14 +11,8 @@ const Contribute: NextPage = () => (
   <>
     <SEO
       title="Contributing"
-      description="Without contributors our projects wouldn't be possible. Find out how you can help."
-      keywords={[
-        "papermc",
-        "levilamina",
-        "minecraft",
-        "sponsor",
-        "contributing",
-      ]}
+      description=""
+      keywords={[]}
       canonical="/contribute"
     />
     <header className="max-w-7xl flex flex-row mx-auto px-4 pt-32 pb-16 lg:(pt-48 pb-32) gap-16">
@@ -42,10 +36,10 @@ const Contribute: NextPage = () => (
       <div className="flex-1">
         <h2 className="font-medium text-2xl md:text-4xl">...Financially</h2>
         <p className="md:(mt-6 text-lg) text-gray-900 dark:text-gray-100 mt-3">
-          PaperMC uses Open Collective to manage various recurring expenses,
-          mostly related to infrastructure. Open Collective allows us to be
-          extremely transparent, so you can always see how your donations are
-          used.
+          LeviMC uses Open Collective to manage our ongoing expenses, primarily
+          for servers and development infrastructure. Through Open
+          Collective&apos;s transparent platform, you can track exactly how your
+          donations help sustain and grow our projects.
         </p>
         <div className="flex flex-row gap-4 mt-8">
           <Button variant="filled" href="/sponsors" dense>
@@ -70,7 +64,7 @@ const Contribute: NextPage = () => (
         <div className="flex flex-row gap-4 mt-8">
           <Button
             variant="filled"
-            href="https://github.com/PaperMC/Paper/blob/master/CONTRIBUTING.md"
+            href="https://github.com/LiteLDev"
             external
             dense
           >
@@ -90,12 +84,16 @@ const Contribute: NextPage = () => (
         <h2 className="font-medium text-2xl md:text-4xl">...Support</h2>
         <p className="md:(mt-6 text-lg) text-gray-900 dark:text-gray-100 mt-3">
           A lot of users result in a lot of questions. Everyone is welcome to
-          answer questions or provide support, whether on our Discord server or
-          in our forums
+          answer questions or provide support, especially on our Discord server.
         </p>
         <div className="flex flex-row gap-4 mt-8">
-          <Button variant="filled" href="/community" dense>
-            Our Community
+          <Button
+            variant="filled"
+            href="https://discord.gg/8dvbzQMDNQ"
+            external
+            dense
+          >
+            Join our Discord
           </Button>
         </div>
       </div>
@@ -104,24 +102,24 @@ const Contribute: NextPage = () => (
       </div>
     </section>
     <section
-      id="documentation"
+      id="website"
       className="px-4 py-4 max-w-7xl mx-auto flex flex-col-reverse items-center mt-12 gap-8 lg:flex-row"
     >
       <div className="flex-1">
-        <h2 className="font-medium text-2xl md:text-4xl">...Documentation</h2>
+        <h2 className="font-medium text-2xl md:text-4xl">...Website</h2>
         <p className="md:(mt-6 text-lg) text-gray-900 dark:text-gray-100 mt-3">
-          Constantly evolving software needs constantly updated documentation.
-          No matter if you want to report missing information or add guides
-          yourself, we always appreciate help.
+          We use Next.js and Tailwind CSS to build our website. If you want to
+          help us improve the website, you can contribute to our GitHub
+          repository.
         </p>
         <div className="flex flex-row gap-4 mt-8">
           <Button
             variant="filled"
-            href="https://github.com/PaperMC/docs"
+            href="https://github.com/LiteLDev/levimc.org"
             external
             dense
           >
-            Docs Repository
+            Website Repository
           </Button>
         </div>
       </div>

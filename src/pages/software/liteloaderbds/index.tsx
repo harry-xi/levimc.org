@@ -7,10 +7,8 @@ import VelocityImage from "@/assets/images/velocity.webp";
 import Button from "@/components/input/Button";
 import SoftwareHeader from "@/components/layout/SoftwareHeader";
 import SEO from "@/components/util/SEO";
-import type { HangarProjectProps } from "@/lib/context/downloads";
-import { getProjectProps } from "@/lib/context/downloads";
 
-const WaterfallHome = ({ project }: HangarProjectProps): ReactElement => {
+const WaterfallHome = (): ReactElement => {
   return (
     <>
       <SEO
@@ -29,7 +27,6 @@ const WaterfallHome = ({ project }: HangarProjectProps): ReactElement => {
       <SoftwareHeader
         id="waterfall"
         name="Waterfall"
-        versionGroup={project.latestVersionGroup}
         header={<>Waterfall has reached end of life</>}
         description={
           <>
@@ -97,7 +94,7 @@ const WaterfallHome = ({ project }: HangarProjectProps): ReactElement => {
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://discord.gg/papermc"
+                href="https://discord.gg/8dvbzQMDNQ"
                 external
                 dense
               >
@@ -126,5 +123,3 @@ WaterfallHome.softwareProps = {
 };
 
 export default WaterfallHome;
-
-export const getStaticProps = getProjectProps("waterfall");
