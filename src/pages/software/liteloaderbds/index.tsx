@@ -2,51 +2,41 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
+import LiteLoaderBDSImage from "@/assets/brand/liteloaderbds.svg";
 import CommunityImage from "@/assets/images/community.webp";
 import VelocityImage from "@/assets/images/velocity.webp";
 import Button from "@/components/input/Button";
 import SoftwareHeader from "@/components/layout/SoftwareHeader";
 import SEO from "@/components/util/SEO";
 
-const WaterfallHome = (): ReactElement => {
+const LiteLoaderBDSHome = (): ReactElement => {
   return (
     <>
       <SEO
-        title="Waterfall"
-        description="Waterfall is an upgraded BungeeCord, offering full compatibility with improvements to performance and stability."
-        keywords={[
-          "waterfall",
-          "proxy",
-          "minecraft",
-          "performance",
-          "bungeecord",
-          "fork",
-        ]}
-        canonical="/software/waterfall"
+        title="LiteLoaderBDS"
+        description=""
+        keywords={[]}
+        canonical="/software/liteloaderbds"
       />
       <SoftwareHeader
-        id="waterfall"
-        name="Waterfall"
-        header={<>Waterfall has reached end of life</>}
+        id="liteloaderbds"
+        name="LiteLoaderBDS"
+        header={<>LiteLoaderBDS has reached end of life</>}
+        icon={LiteLoaderBDSImage}
         description={
           <>
             We recommend you transition to{" "}
             <Link
               className="text-green-700 hover:text-green-400 hover:underline"
-              href="/software/velocity"
+              href="/software/levilamina"
             >
-              Velocity
+              LeviLamina
             </Link>
-            . For more information see the{" "}
-            <a
-              className="text-green-700 hover:text-green-400 hover:underline"
-              href="https://forums.papermc.io/threads/1088/"
-            >
-              announcement
-            </a>
-            . <br /> Archived Waterfall builds and docs are available here.
+            . <br /> Archived LiteLoaderBDS builds and docs are available here.
           </>
         }
+        github="https://github.com/LiteLDev/LiteLoaderBDS"
+        documentation="https://github.com/LiteLDev/liteloaderbds-documentation"
         eol
       />
       <section
@@ -66,28 +56,38 @@ const WaterfallHome = (): ReactElement => {
           </div>
           <div className="flex-1">
             <h2 className="font-semibold text-2xl md:text-4xl">
-              Need an updated proxy? Use Velocity!
+              Need an updated mod loader? Use LeviLamina!
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              All the experience the PaperMC team has gained from working on
-              Waterfall has applied to Velocity. Designed with performance and
-              scalability in mind, Velocity is the best proxy software
-              available.
+              All the experience the LeviMC team has gained from working on
+              LiteLoaderBDS has applied to LeviLamina. Designed with performance
+              and scalability in mind, LeviLamina is the best mod loader for
+              Minecraft Bedrock Edition.
             </p>
             <div className="flex flex-row gap-4 mt-8">
-              <Button variant="filled" href="/software/velocity" dense>
+              <Button variant="filled" href="/software/levilamina" dense>
                 Learn more
               </Button>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 md:(flex-row-reverse gap-8) xl:gap-24 items-center">
+        <div className="flex flex-col gap-6 md:(flex-row gap-8) xl:gap-24 items-center">
+          <div className="w-full flex-1 rounded-xl aspect-video relative overflow-clip">
+            <Image
+              alt=""
+              src={CommunityImage}
+              placeholder="blur"
+              fill
+              sizes="(min-width: 80rem) 40rem, (min-width: 768px) 40vw, 100vw"
+              className="object-cover"
+            />
+          </div>
           <div className="flex-1">
             <h2 className="font-semibold text-2xl md:text-4xl">
               Together with a community of server owners
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Whether you need help with your proxy settings, server lag, or
+              Whether you need help with your server settings, server lag, or
               need a guide for formatting your chat, our knowledgeable staff and
               friendly community are always around to lend a hand.
             </p>
@@ -102,24 +102,14 @@ const WaterfallHome = (): ReactElement => {
               </Button>
             </div>
           </div>
-          <div className="w-full flex-1 rounded-xl aspect-video relative overflow-clip">
-            <Image
-              alt=""
-              src={CommunityImage}
-              placeholder="blur"
-              fill
-              sizes="(min-width: 80rem) 40rem, (min-width: 768px) 40vw, 100vw"
-              className="object-cover"
-            />
-          </div>
         </div>
       </section>
     </>
   );
 };
 
-WaterfallHome.softwareProps = {
-  github: "https://github.com/PaperMC/Waterfall",
+LiteLoaderBDSHome.softwareProps = {
+  github: "https://github.com/LiteLDev/LiteLoaderBDS",
 };
 
-export default WaterfallHome;
+export default LiteLoaderBDSHome;

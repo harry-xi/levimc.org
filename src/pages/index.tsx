@@ -24,13 +24,13 @@ const Home = ({}) => {
             Modding made simple. <br />
             <span className="text-green-700">Built for creators.</span>
           </h1>
-          <p className="text-xl mt-4">
+          <p className="text-xl mt-4 max-w-2xl">
             LeviMC enhances Minecraft Bedrock&apos;s ecosystem with powerful
             modding tools and an extensive API, empowering creators to build
             amazing experiences with a stable, performant, and well-documented
             framework.
           </p>
-          <p className="text-xl mt-4">
+          <p className="text-xl mt-4 max-w-2xl">
             <span className="font-semibold">LeviLamina</span> is the core of
             LeviMC, powering the modding ecosystem. Click the button below to
             get started.
@@ -52,7 +52,7 @@ const Home = ({}) => {
             </Button>
           </div>
         </div>
-        <div className="flex-1 lg:flex hidden justify-end items-center">
+        <div className="flex-1 xl:flex hidden justify-end items-center">
           <Terminal />
         </div>
       </header>

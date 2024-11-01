@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactElement } from "react";
 
+import LipIcon from "@/assets/brand/lip.svg";
 import BoltIcon from "@/assets/icons/heroicons/bolt.svg";
 import ChatBubbleLeftRightIcon from "@/assets/icons/heroicons/chat-bubble-left-right.svg";
 import CodeBracketIcon from "@/assets/icons/heroicons/code-bracket.svg";
@@ -12,26 +13,18 @@ import Button from "@/components/input/Button";
 import SoftwareHeader from "@/components/layout/SoftwareHeader";
 import SEO from "@/components/util/SEO";
 
-const VelocityHome = (): ReactElement => {
+const LipHome = (): ReactElement => {
   return (
     <>
-      <SEO
-        title="Velocity"
-        description="Velocity is the modern, high-performance Minecraft server proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
-        keywords={[
-          "velocity",
-          "proxy",
-          "minecraft",
-          "performance",
-          "bungeecord",
-        ]}
-        canonical="/software/velocity"
-      />
+      <SEO title="lip" description="" keywords={[]} canonical="/software/lip" />
       <SoftwareHeader
-        id="velocity"
-        name="Velocity"
-        header={<>Next generation speed and capability</>}
-        description="Velocity is the modern, high-performance proxy. Designed with performance and stability in mind, it’s a full alternative to Waterfall with its own plugin ecosystem."
+        id="lip"
+        name="lip"
+        icon={LipIcon}
+        header={<>Mod installing never been easier</>}
+        description="lip is our officially recommended package installer for Bedrock mods."
+        github="https://github.com/futrime/lip"
+        documentation="https://lip.futrime.com"
       />
       <section
         id="why"
@@ -39,23 +32,23 @@ const VelocityHome = (): ReactElement => {
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="font-semibold text-xl md:text-2xl px-6 lg:px-4">
-            Why Velocity?
+            Why lip?
           </h2>
           <div className="grid md:grid-cols-3 mt-6 gap-2 px-2 xl:gap-4">
             <FeatureCard
               icon={BoltIcon}
-              label="Out with the old, in with the new"
-              description="Velocity is the best proxy software available. Designed with performance and scalability in mind, Velocity is a lot faster and much more stable than BungeeCord."
+              label="Fast and efficient installation"
+              description="lip is designed with performance in mind, featuring a lightweight core and efficient package management. The installer is optimized to quickly handle mod installations while maintaining stability."
             />
             <FeatureCard
               icon={ChatBubbleLeftRightIcon}
               label="An active and growing community"
-              description="Velocity has an active and growing community of server administrators and developers. If you encounter any problems, you can come talk with us on Discord and get real time support."
+              description="lip has an active and growing community of mod developers and server administrators. Get help and support through our active Discord community, where you can connect with other users and contributors."
             />
             <FeatureCard
               icon={CodeBracketIcon}
-              label="Plenty of plugins to choose from"
-              description="While BungeeCord has more third-party software due to its longer life so far, Velocity isn’t lacking in the essentials. With enough to get going and more added every day, Velocity has what you need."
+              label="Simple yet powerful"
+              description="lip provides an intuitive command-line interface that makes mod installation easy. With support for multiple package sources and dependency management, lip has all the features you need to manage your mods."
             />
           </div>
         </div>
@@ -77,23 +70,22 @@ const VelocityHome = (): ReactElement => {
           </div>
           <div className="flex-1">
             <h2 className="font-semibold text-2xl md:text-4xl">
-              A diverse plugin ecosystem
+              A thriving mod ecosystem
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Crafted by the PaperMC team & contributors, Hangar is our own
-              dedicated plugin repository, now in open beta! View over&nbsp;
-              <span className={"text-green-700"}>{0}</span>
-              &nbsp;different plugins that are specific to Velocity, or list
-              your own with a very streamlined creation process.
+              Crafted by the LeviMC team & contributors, Bedrinth is our own
+              dedicated mod repository, now open to the public! View different
+              mods that are specific to LeviLamina, or list your own with a very
+              streamlined creation process.
             </p>
             <div className="flex flex-row gap-4 mt-8">
               <Button
                 variant="filled"
-                href="https://hangar.papermc.io/"
+                href="hhttps://bedrinth.com/?q=platform:levilamina%20type:mod"
                 external
                 dense
               >
-                Check out Hangar
+                View on Bedrinth
               </Button>
             </div>
           </div>
@@ -111,24 +103,24 @@ const VelocityHome = (): ReactElement => {
           </div>
           <div className="flex-1">
             <h2 className="font-semibold text-2xl md:text-4xl break-all">
-              Getting Started
+              No Command Line Required
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              To get started with Velocity, you will need to download and
-              install the latest version of the proxy software. Once you&apos;re
-              ready, take a look at our extensive documentation.
+              For those who prefer a graphical interface, we&apos;ve developed
+              <span className="font-semibold"> lipui </span>- a user-friendly
+              desktop application that provides all of lip&apos;s functionality
+              without requiring command line knowledge. With an intuitive
+              interface and streamlined workflow, lipui makes mod management
+              accessible to everyone.
             </p>
             <div className="flex flex-row gap-4 mt-8">
-              <Button variant="filled" href="/downloads/velocity" dense>
-                Downloads
-              </Button>
               <Button
-                variant="outlined"
-                href="https://docs.papermc.io/velocity/getting-started"
+                variant="filled"
+                href="https://github.com/futrime/lipui"
                 external
                 dense
               >
-                Documentation
+                GitHub
               </Button>
             </div>
           </div>
@@ -149,7 +141,7 @@ const VelocityHome = (): ReactElement => {
               Together with a community of server owners
             </h2>
             <p className="md:(mt-6 text-xl) text-gray-900 dark:text-gray-100 mt-3">
-              Whether you need help with your proxy settings, server lag, or
+              Whether you need help with your server settings, server lag, or
               need a guide for formatting your chat, our knowledgeable staff and
               friendly community are always around to lend a hand.
             </p>
@@ -170,8 +162,8 @@ const VelocityHome = (): ReactElement => {
   );
 };
 
-VelocityHome.softwareProps = {
-  github: "https://github.com/PaperMC/Velocity",
+LipHome.softwareProps = {
+  github: "https://github.com/futrime/lip",
 };
 
-export default VelocityHome;
+export default LipHome;

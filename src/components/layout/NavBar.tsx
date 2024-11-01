@@ -81,26 +81,15 @@ const NavBar = ({ component }: NavBarProps) => {
               LeviLamina
             </NavDropDownLink>
             <NavDropDownLink href="/software/lip">lip</NavDropDownLink>
+            <NavDropDownLink
+              href="https://github.com/LiteLDev/LegacyScriptEngine"
+              target="_blank"
+            >
+              Legacy Script Engine
+              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
+            </NavDropDownLink>
             <NavDropDownLink href="/software/liteloaderbds" eol>
               LiteLoaderBDS
-            </NavDropDownLink>
-          </NavDropDown>
-          <NavDropDown label="Documentation">
-            <NavDropDownLink href="https://lamina.levimc.org" target="_blank">
-              LeviLamina
-              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
-            </NavDropDownLink>
-            <NavDropDownLink href="https://lip.futrime.com" target="_blank">
-              lip
-              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
-            </NavDropDownLink>
-            <NavDropDownLink
-              href="https://github.com/LiteLDev/liteloaderbds-documentation"
-              target="_blank"
-              eol
-            >
-              LiteLoaderBDS
-              <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
             </NavDropDownLink>
           </NavDropDown>
           <NavLink
@@ -111,6 +100,7 @@ const NavBar = ({ component }: NavBarProps) => {
             Mods
             <ExternalUrlIcon className="h-4 w-4 ml-1 align-sub" />
           </NavLink>
+          <NavLink href="/roadmap">Roadmap</NavLink>
           <NavLink href="/team">Team</NavLink>
           <NavLink href="/contribute">Contribute</NavLink>
           <NavLink href="/sponsors">Sponsors</NavLink>
