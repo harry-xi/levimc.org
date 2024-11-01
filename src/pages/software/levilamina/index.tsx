@@ -35,6 +35,7 @@ const LeviLaminaHome = (): ReactElement => {
         }
         description="LeviLamina is a lightweight, modular and versatile mod loader for Minecraft Bedrock Edition."
         github="https://github.com/LiteLDev/LeviLamina"
+        documentation="https://lamina.levimc.org/"
       />
       <section
         id="why"
@@ -137,14 +138,6 @@ const LeviLaminaHome = (): ReactElement => {
                 dense
               >
                 Quickstart
-              </Button>
-              <Button
-                variant="outlined"
-                href="https://lamina.levimc.org/"
-                external
-                dense
-              >
-                Documentation
               </Button>
             </div>
           </div>

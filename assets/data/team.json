@@ -1,14 +1,14 @@
 [
   {
-    "id": "owner-team",
-    "name": "Owner Team",
-    "description": "Owner Team members are responsible for the direction of the project, and for making the big decisions. Whether they focus on the code or the community, they're essential to making everything run and have final say in just about anything.",
+    "id": "org-owners",
+    "name": "Organization Owners",
+    "description": "Organization Owners are responsible for the direction of the project, and for making the big decisions. Whether they focus on the code or the community, they're essential to making everything run and have final say in just about anything. This list is sorted by alphabetical order.",
     "members": [
       {
-        "name": "OEOTYAN",
-        "avatar": "https://avatars.githubusercontent.com/u/58554322?v=4",
-        "discord": "oeotyan",
-        "github": "OEOTYAN"
+        "name": "Dofes",
+        "avatar": "https://avatars.githubusercontent.com/u/91889957?v=4",
+        "discord": "dofes",
+        "github": "Dofes"
       },
       {
         "name": "Jacey",
@@ -17,10 +17,10 @@
         "github": "dreamguxiang"
       },
       {
-        "name": "Zijian Zhang",
-        "avatar": "https://avatars.githubusercontent.com/u/35801754?v=4",
-        "discord": "futrime",
-        "github": "futrime"
+        "name": "OEOTYAN",
+        "avatar": "https://avatars.githubusercontent.com/u/58554322?v=4",
+        "discord": "oeotyan",
+        "github": "OEOTYAN"
       },
       {
         "name": "RimuruChan",
@@ -29,16 +29,16 @@
         "github": "RimuruChan"
       },
       {
-        "name": "Dofes",
-        "avatar": "https://avatars.githubusercontent.com/u/91889957?v=4",
-        "discord": "dofes",
-        "github": "Dofes"
-      },
-      {
         "name": "Shrbox",
         "avatar": "https://avatars.githubusercontent.com/u/53301243?v=4",
         "discord": "shrbox",
         "github": "ShrBox"
+      },
+      {
+        "name": "Zijian Zhang",
+        "avatar": "https://avatars.githubusercontent.com/u/35801754?v=4",
+        "discord": "futrime",
+        "github": "futrime"
       }
     ]
   }

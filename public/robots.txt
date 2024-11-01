@@ -4,4 +4,4 @@ Disallow: /repo/
 Disallow: /api/
 Allow: /
 
-Sitemap: https://papermc.io/sitemap.xml
+Sitemap: https://levimc.org/sitemap.xml
